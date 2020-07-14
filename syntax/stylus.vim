@@ -1343,6 +1343,7 @@ let g:svg_props = [
   \'stroke-miterlimit',
   \'stroke-opacity',
   \'stroke-width',
+  \'touch-action',
   \'text-anchor',
   \'text-rendering'
 \]

@@ -19,14 +19,11 @@ function! s:StylusMake()
   " i've decided to put everything straight into vimscript,
   " make sux and this is a much cleaner way:
   " compile code and get the output
-  echo "\n"
-  echo shellescape(expand('%'))
-  echo "\n"
   let o = system(g:stylus_compiler . ' ' . shellescape(expand('%')))
   " check for error
-  if strlen(o)
+  if matchstr(o, 'compiled') == ""
     " simply dump everything
-    echo "\n"
+    "echo "\n"
     echohl ErrorMsg
     echo o . "\n"
     echohl None
@@ -37,7 +34,6 @@ function! s:StylusMake()
 endfunction
 function! s:StylusAutoMake()
   " {{{
-  echo "test"
   if g:stylus_autocompile
     call s:StylusMake()
   endif
