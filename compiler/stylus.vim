@@ -9,8 +9,7 @@ if !exists('stylus_compiler')
   let g:stylus_compiler = 'stylus'
 endif
 if !exists('stylus_compiler_opts')
-  " -c to compress output
-  let g:stylus_compiler_opts = '-c'
+  let g:stylus_compiler_opts = ''
 endif
 if !exists('stylus_autocompile')
   let g:stylus_autocompile = 1
