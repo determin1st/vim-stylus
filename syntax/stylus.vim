@@ -525,6 +525,7 @@ let g:css_props = [
   \'animation-name',
   \'animation-play-state',
   \'animation-timing-function',
+  \'appearance',
   \'background',
   \'background-color',
   \'background-image',
@@ -763,6 +764,7 @@ let g:css_pseudo = [
 let g:css_single_props = [
   \'all',
   \'animation',
+  \'appearance',
   \'background',
   \'border',
   \'bottom',
